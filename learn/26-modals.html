@@ -13,9 +13,40 @@
       <h1 class="mb-5">Modal</h1>
 
       <!-- Modal Button -->
-      <button type="button" class="btn btn-primary">Open Modal</button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Open Modal
+      </button>
 
       <!-- Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="myModalLabel">Modal Title</h1>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              iusto fugiat neque, magnam sapiente, quisquam pariatur voluptate
+              molestias voluptatibus maiores quas tempore saepe minus? Tenetur,
+              inventore magnam! Nemo, dolor aliquid.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Don't go past here -->
     </div>
