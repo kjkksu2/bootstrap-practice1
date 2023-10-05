@@ -1,3 +1,7 @@
+textarea {
+  resize: none;
+}
+
 .navbar .btn-outline-light:hover {
   color: var(--bs-dark);
 }
@@ -23,6 +27,14 @@
 .download {
   background: url("../images/download-background.jpg") center center no-repeat;
   background-size: cover;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  border: none;
 }
 
 @media (max-width: 1000px) {
