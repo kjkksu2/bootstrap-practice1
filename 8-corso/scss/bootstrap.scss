@@ -5,34 +5,9 @@ $font-family-sans-serif: "Montserrat", sans-serif;
 $primary: #f8b547;
 $secondary: #35353a;
 $light: #fbf9f5;
-$body-lg: $light;
+$body-bg: $light;
 
-// Navbar
-$navbar-nav-link-padding-x: 0.8rem;
-$navbar-padding-y: 1rem;
-$navbar-dark-color: #fff;
-
-// Buttons
-$button-radius: 50px;
-
-$button-padding-x: 30px;
-$button-padding-y: 10px;
-
-$btn-border-radius: $button-radius;
-$btn-border-radius-sm: $button-radius;
-$btn-border-radius-lg: $button-radius;
-
-$btn-padding-x: $button-padding-x;
-$btn-padding-x-sm: $button-padding-x;
-$btn-padding-x-lg: $button-padding-x;
-
-$btn-padding-y: $button-padding-y;
-$btn-padding-y-sm: $button-padding-y;
-$btn-padding-y-lg: $button-padding-y;
-
-$navbar-toggler-border-radius: 5px;
-
-// Spacers
+// Spacing
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
@@ -46,8 +21,30 @@ $spacers: (
   8: $spacer * 12,
 ) !default;
 
+$headings-margin-bottom: $spacer * 1;
 $line-height-base: 1.7;
-$heading-margin-bottom: $spacer * 1;
+
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+
+// Buttons
+$button-radius: 50px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$navbar-toggler-border-radius: 5px;
+
 $headings-font-weight: bold;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -17,7 +14,6 @@
     <title>Corso Training</title>
   </head>
   <body id="home">
-    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
         <a href="index.html" class="navbar-brand">
@@ -25,27 +21,31 @@
         </a>
         <button
           class="navbar-toggler"
+          type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#discover" class="nav-link">Discover</a>
+              <a class="nav-link" href="#discover">Discover</a>
             </li>
             <li class="nav-item">
-              <a href="#summary" class="nav-link">Summary</a>
+              <a class="nav-link" href="#summary">Summary</a>
             </li>
             <li class="nav-item">
-              <a href="#takeaways" class="nav-link">Takeaways</a>
+              <a class="nav-link" href="#takeaways">Takeaways</a>
             </li>
             <li class="nav-item">
-              <a href="#subscribe" class="nav-link">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
           </ul>
           <span class="nav-item">
@@ -90,18 +90,31 @@
           </div>
         </div>
 
-        <!-- Slider -->
         <div class="row">
           <div class="col-12">
+            <!-- Image Slider -->
             <div id="slider" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button
                   class="active"
-                  data-bs-target="#slider"
+                  type="button"
                   data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
                 ></button>
-                <button data-bs-target="#slider" data-bs-slide-to="1"></button>
-                <button data-bs-target="#slider" data-bs-slide-to="2"></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
               </div>
               <div class="carousel-inner rounded-5">
                 <div class="carousel-item active">
@@ -126,10 +139,10 @@
                   />
                 </div>
               </div>
-
-              <!-- Button -->
+              <!-- Buttons -->
               <button
                 class="carousel-control-prev"
+                type="button"
                 data-bs-slide="prev"
                 data-bs-target="#slider"
               >
@@ -138,6 +151,7 @@
               </button>
               <button
                 class="carousel-control-next"
+                type="button"
                 data-bs-slide="next"
                 data-bs-target="#slider"
               >
@@ -160,6 +174,7 @@
               Our wide range of training and seminar videos are designed to
               empower you with valuable knowledge and skills.
             </p>
+
             <ul class="list-unstyled vstack gap-3">
               <li>
                 <i class="fas fa-square"></i>
@@ -205,7 +220,7 @@
                 />
               </div>
               <div class="form-check">
-                <input id="terms" type="checkbox" class="form-check-input" />
+                <input type="checkbox" class="form-check-input" value="" />
                 <label for="terms" class="form-check-label">
                   I agree to the terms and conditions
                 </label>
@@ -257,12 +272,13 @@
             <h2>Unlock Your Potential with Engaging Training Videos</h2>
           </div>
         </div>
-
         <div class="row">
           <div class="col-md-6 mb-4">
             <div class="d-flex gap-3">
               <div class="number">
-                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">1</span>
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">
+                  1
+                </span>
               </div>
               <div>
                 <h3 class="fs-4">Enhance Your Skills</h3>
@@ -275,7 +291,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-6 mb-4">
             <div class="d-flex gap-3">
               <div class="number">
@@ -360,7 +375,7 @@
     </section>
 
     <!-- Course Summary -->
-    <section id="summary" class="bg-light mt-5 w-75 m-auto">
+    <section id="summary" class="summary bg-light mt-5 w-75 m-auto">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -404,7 +419,7 @@
     </section>
 
     <!-- Details 2 -->
-    <section id="discover" class="details py-6 bg-light">
+    <section class="details py-6 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -519,6 +534,7 @@
             </div>
           </div>
 
+          <!-- Second Row -->
           <div class="col-md-4">
             <div class="card mb-4 rounded-0 border-0 p-3">
               <div class="card-body text-center">
@@ -574,7 +590,7 @@
     <section id="subscribe" class="subscribe my-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-6 text-center">
+          <div class="col-md-6 offset-md-3 text-center">
             <h2>
               Subscribe to our email list and get updates from the experts
             </h2>
@@ -604,9 +620,9 @@
           <div class="col-md-4">
             <h5>Lorem Ipsum</h5>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-              consectetur unde placeat tempore ut eveniet ad pariatur omnis
-              culpa nam!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+              possimus aliquid omnis commodi. Dignissimos, quam obcaecati? Fugit
+              non ex repellendus?
             </p>
           </div>
           <div class="col-md-4">

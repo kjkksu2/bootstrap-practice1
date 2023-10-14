@@ -1,5 +1,5 @@
 // Font
-$font-family-sans-serif: "Poppins", sans-serif;
+$font-family-sans-serif: 'Poppins', sans-serif;
 
 // Colors
 $primary: #fe6b2a;
@@ -55,6 +55,4 @@ $input-border-radius-sm: $input-radius;
 $input-border-radius-lg: $input-radius;
 $input-border-color: #666;
 
-$form-check-input-bg: #fff;
-
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';

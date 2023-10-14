@@ -1,11 +1,11 @@
 .header {
-  background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
+  background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .header::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
 }
 
 .header .roles {
-  font-family: 'lora-regular', serif;
+  font-family: "lora-regular", serif;
 }
 
 .header .social {
@@ -37,13 +37,13 @@
 }
 
 .services {
-  background: url('../images/bg.jpg') no-repeat center center;
+  background: url("../images/bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .services::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -60,15 +60,12 @@
   .header .social i {
     font-size: 30px;
   }
-
   .header .roles {
     font-size: 18px !important;
   }
-
   .about-content {
     flex-direction: column;
   }
-
   .stats .stat {
     border-right: 0 !important;
     margin-bottom: 40px;

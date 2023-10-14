@@ -17,26 +17,26 @@
     <title>Yavin Office Design</title>
   </head>
   <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.svg" alt="" width="124" />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#details">Details</a>
@@ -51,9 +51,8 @@
               <a
                 class="nav-link btn btn-outline-secondary px-4 mx-4"
                 href="#contact"
+                >Contact Us</a
               >
-                Contact Us
-              </a>
             </li>
           </ul>
         </div>
@@ -91,7 +90,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="image-container">
               <img src="images/header.png" alt="" class="img-fluid" />
@@ -147,7 +145,10 @@
     </section>
 
     <!-- Details 1 -->
-    <section id="details" class="details position-relative overflow-hidden">
+    <section
+      id="details"
+      class="details position-relative my-6 overflow-hidden"
+    >
       <img
         src="images/decoration-star.svg"
         alt=""
@@ -160,13 +161,11 @@
               <img src="images/details-1.png" alt="" class="img-fluid" />
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="mt-4">
               <h2 class="mb-4">
                 Create <span class="text-primary">Unique</span> Office Spaces
               </h2>
-
               <ul class="list-unstyled">
                 <li class="d-flex mb-3">
                   <i class="fas fa-check text-primary fa-2x mx-4"></i>
@@ -223,7 +222,6 @@
               </p>
             </div>
           </div>
-
           <div class="col-lg-7">
             <div class="row mb-4">
               <div
@@ -232,14 +230,12 @@
                 <i class="fas fa-rocket fa-4x text-secondary mb-2"></i>
                 <p class="fs-5 fw-bold">Space Analysis & Planning</p>
               </div>
-
               <div
                 class="col-md-4 d-flex flex-column align-items-center text-center"
               >
                 <i class="fas fa-clock fa-4x text-secondary mb-2"></i>
                 <p class="fs-5 fw-bold">Design & Color Choosing</p>
               </div>
-
               <div
                 class="col-md-4 d-flex flex-column align-items-center text-center"
               >
@@ -247,7 +243,6 @@
                 <p class="fs-5 fw-bold">Materials & Delivery</p>
               </div>
             </div>
-
             <div class="row">
               <div
                 class="col-md-4 d-flex flex-column align-items-center text-center"
@@ -255,14 +250,12 @@
                 <i class="fas fa-tools fa-4x text-secondary mb-2"></i>
                 <p class="fs-5 fw-bold">Execute The Concept</p>
               </div>
-
               <div
                 class="col-md-4 d-flex flex-column align-items-center text-center"
               >
                 <i class="fas fa-chart-pie fa-4x text-secondary mb-2"></i>
                 <p class="fs-5 fw-bold">Create A Great Atmosphere</p>
               </div>
-
               <div
                 class="col-md-4 d-flex flex-column align-items-center text-center"
               >
@@ -276,7 +269,7 @@
     </section>
 
     <!-- Details 2 -->
-    <section class="details2 position-relative overflow-hidden">
+    <section class="details-2 position-relative my-6 overflow-hidden">
       <img
         src="images/decoration-star.svg"
         alt=""
@@ -301,10 +294,9 @@
               <a href="article.html" class="btn btn-primary">Get Started</a>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="image-container d-flex justify-content-center">
-              <img src="images/details-2.png" alt="" class="img-fluid" />
+              <img src="images/details-2.png" alt="" class="iimg-fluid" />
             </div>
           </div>
         </div>
@@ -332,7 +324,6 @@
         <h2 class="text-center pb-4">
           Some Of Our <span class="text-secondary">Projects</span>
         </h2>
-
         <!-- Projects Row 1 -->
         <div class="row mb-4">
           <div class="col-md-4">
@@ -348,7 +339,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card border-0">
               <img src="images/project-2.jpg" alt="" />
@@ -362,7 +352,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card border-0">
               <img src="images/project-3.jpg" alt="" />
@@ -393,7 +382,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card border-0">
               <img src="images/project-5.jpg" alt="" />
@@ -407,7 +395,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card border-0">
               <img src="images/project-6.jpg" alt="" />
@@ -472,8 +459,7 @@
               <div>Team Leader - Vanquish</div>
             </div>
           </div>
-
-          <!-- Slide 3 -->
+          <!-- Slide 1 -->
           <div class="carousel-item">
             <div
               class="d-flex flex-column justify-content-center align-items-center text-center"
@@ -498,6 +484,7 @@
 
         <button
           class="carousel-control-prev"
+          type="button"
           data-bs-target="#testimonialCarousel"
           data-bs-slide="prev"
         >
@@ -505,6 +492,7 @@
         </button>
         <button
           class="carousel-control-next"
+          type="button"
           data-bs-target="#testimonialCarousel"
           data-bs-slide="next"
         >
@@ -540,7 +528,6 @@
                     placeholder="Enter name"
                   />
                 </div>
-
                 <div class="mb-3">
                   <input
                     type="email"
@@ -548,7 +535,6 @@
                     placeholder="Enter email"
                   />
                 </div>
-
                 <div class="mb-3">
                   <input
                     type="text"
@@ -556,7 +542,6 @@
                     placeholder="Enter phone"
                   />
                 </div>
-
                 <div class="mb-3">
                   <textarea
                     class="form-control"
@@ -564,7 +549,6 @@
                     rows="8"
                   ></textarea>
                 </div>
-
                 <div class="d-grid gap-2">
                   <input
                     type="submit"
@@ -590,7 +574,6 @@
               laudantium.
             </p>
           </div>
-
           <div class="col-md-4 my-3">
             <h6>Links</h6>
             <ul class="list-unstyled">
@@ -608,7 +591,6 @@
               </li>
             </ul>
           </div>
-
           <div class="col-md-4 my-3">
             <div class="mb-4">
               <a href="#" class="text-decoration-none">
